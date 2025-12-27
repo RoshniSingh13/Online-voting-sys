@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Online Voting System</h1>
+
+    <div class="box">
+      <h2>Vote for Your Candidate</h2>
+
+      <form id="voteForm">
+        <label>
+          <input type="radio" name="vote" value="Candidate A"> Candidate A
+        </label><br>
+
+        <label>
+          <input type="radio" name="vote" value="Candidate B"> Candidate B
+        </label><br>
+
+        <label>
+          <input type="radio" name="vote" value="Candidate C"> Candidate C
+        </label><br>
+
+        <button type="submit">Submit Vote</button>
+      </form>
+
+      <p id="message"></p>
+    </div>
+
+    <div class="box">
+      <h2>Results</h2>
+      <button onclick="showResults()">View Results</button>
+      <ul id="results"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
